@@ -1,2 +1,32 @@
 # Android-Kodi-Estuary-Font-Size
-Scripts to change font size Kodi (skin.estuary) for Android-TV-Box
+
+Это скрипты для изменения размера шрифтов Kodi (skin.estuary) для Android-TV-Box. В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору шрифты были слишком мелкие, а регулировка размера шрифтов в самом Kodi, разумеется, отсутствует. В результате пришлось делать это...
+
+Для работы требуется рутированный tv-box и хотя бы 1 раз запущенный Kodi, поскольку нужные для редактирования файлы появляются именно после первого запуска Kodi.
+
+Файлы:
+---
+`Font_orig.xml` - оригинальный файл настройки шрифтов (взят из Kodi-21.2)  
+`Font.xml` - измененный файл настройки шрифтов для замены на tv-box  
+`Restore_Font.xml.sh` - скрипт, переcoздаёт ./Font.xml из оригинального ./Font_orig.xml  
+
+**Вариант изменения-1 (избирательный, рекомендуется)**  
+`size+10%.py` - скрипт, избирательное увеличение размера шрифтов + 10% (фильмы, серии, заголовки)  
+`size-10%.py` - скрипт, избирательное уменьшение размера шрифтов - 10% (фильмы, серии, заголовки)  
+
+**Вариант изменения-2 (общий)**  
+`size_all+10%.py` - скрипт, общее уменьшение размера шрифтов + 10%  
+`size_all-10%.py` - скрипт, общее уменьшение размера шрифтов - 10%  
+
+`send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box
+
+Как изменить шрифт
+---
+1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
+2. Запустить `Restore_Font.xml.sh` чтобы начать с дефолтного `Font.xml`
+3. Для увеличения на 20% нажать 2 раза `size+10%.py` (или `size_all+10%.py`, если требуется увеличить всё)
+4. Запустить `send_to_tv-box.sh` и тем самым отправить изменённый ./Font.xml на tv-box
+5. Перезапустить Kodi и посмотреть результат
+
+![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Size/blob/main/screenshots/screenshot1.png)
+![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Size/blob/main/screenshots/screenshot2.png)
