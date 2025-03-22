@@ -4,8 +4,8 @@
 
 Для работы требуется рутированный tv-box и хотя бы 1 раз запущенный Kodi, поскольку нужные для редактирования файлы появляются именно после первого запуска Kodi.
 
-Файлы в skin.estuary_font_size.tar.gz:
----
+Файлы в skin.estuary_font_size.tar.gz
+--
 `Font_orig.xml` - оригинальный файл настройки шрифтов (взят из Kodi-21.2)  
 `Font.xml` - измененный файл настройки шрифтов для замены на tv-box  
 `Restore_Font.xml.sh` - скрипт, переcoздаёт ./Font.xml из оригинального ./Font_orig.xml  
@@ -21,7 +21,7 @@
 `send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box
 
 Как изменить шрифт
----
+--
 1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
 2. Запустить `Restore_Font.xml.sh` чтобы начать с дефолтного `Font.xml`
 3. Для увеличения на 20% нажать 2 раза `size+10%.py` (или `size_all+10%.py`, если увеличиваем всё)
