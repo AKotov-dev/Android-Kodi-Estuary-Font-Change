@@ -20,7 +20,7 @@
 
 `send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box
 
-Как изменить шрифт
+Как изменить размер шрифта
 --
 1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
 2. Запустить `Restore_Font.xml.sh` чтобы начать с дефолтного `Font.xml`
