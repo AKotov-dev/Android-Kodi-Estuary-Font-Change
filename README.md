@@ -30,3 +30,23 @@
 
 ![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/blob/main/screenshots/screenshot1.png)
 ![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/blob/main/screenshots/screenshot2.png)
+
+Как изменить цвет шрифта
+---
+В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору белый текст был слишком ярким, а регулировка цвета шрифта в самом Kodi, разумеется, отсутствует. Чтобы не надевать сварочную маску для просмотра любимых фильмов через Kodi было сделано следующее...
+
+Файлы в архиве skin.estuary_font_color.tar.gz
+--
+`Defaults_orig.xml` - оригинальный файл настройки цвета (взят из Kodi-21.2)
+`Defaults.xml` - измененный файл настройки цвета для замены на tv-box
+`Restore_Defaults.xml.sh` - скрипт, переcoздаёт ./Defaults.xml из оригинального ./Defaults_orig.xml
+`change_color.py` - скрипт, изменение цвета (silver) текста (фильмы, серии, заголовки)
+`send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box
+
+Как изменить цвет текста
+--
+1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
+2. Запустить `Restore_Defaults.xml.sh` чтобы начать с дефолтного `Defaults.xml`
+3. Для изменения цвета запустить `change_color.py` (по умолчанию цвет silver)
+4. Запустить `send_to_tv-box.sh` и тем самым отправить изменённый ./Defaults.xml на tv-box
+5. Перезапустить Kodi и посмотреть результат
