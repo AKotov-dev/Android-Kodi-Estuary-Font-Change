@@ -51,4 +51,4 @@
 4. Запустить `send_to_tv-box.sh` и тем самым отправить изменённый ./Defaults.xml на tv-box
 5. Перезапустить Kodi и посмотреть результат
 
-**Примечание:** Если Вы работаете в Windows для быстрой настройки Android-TV-Box можно создать живую флешку с Linux. Самый удобный вариант - [MgaRemix-Proserpina](https://github.com/AKotov-dev/MgaRemix-Proserpina), поскольку в ней уже установлен `ADBManager` + скрипты отработают без проблем (python/bash). Подключиться к tv-box можно через сеть по IP-адресу (кнопка "Эмулятор").
+**Примечание:** Если Вы работаете в Windows, для быстрой настройки Android-TV-Box можно создать живую Linux-флешку. Самый удобный вариант - [MgaRemix-Proserpina](https://github.com/AKotov-dev/MgaRemix-Proserpina), поскольку в ней уже установлен `ADBManager` + скрипты отработают без проблем (python/bash). Подключиться к tv-box можно через сеть по IP-адресу (кнопка "Эмулятор").
