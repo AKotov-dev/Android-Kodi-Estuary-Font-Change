@@ -1,0 +1,54 @@
+Android-Kodi-Estuary-Font-Color
+
+Это скрипты для изменения цвета шрифта Kodi (skin.estuary) для Android-TV-Box. В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору белый текст был слишком ярким, а регулировка цвета в самом Kodi, разумеется, отсутствует. В результате пришлось делать это...
+
+Для работы требуется рутированный tv-box и хотя бы 1 раз запущенный Kodi, поскольку нужные для редактирования файлы появляются именно после первого запуска Kodi.
+
+Файлы:
+---
+`Defaults_orig.xml` - оригинальный файл настройки цвета (взят из Kodi-21.2)
+`Defaults.xml` - измененный файл настройки цвета для замены на tv-box
+`Restore_Defaults.xml.sh` - скрипт, переcoздаёт ./Defaults.xml из оригинального ./Defaults_orig.xml
+`change_color.py` - скрипт, изменение цвета (silver) текста (фильмы, серии, заголовки)
+`send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box
+
+Как изменить цвет текста
+---
+1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
+2. Запустить `Restore_Defaults.xml.sh` чтобы начать с дефолтного `Defaults.xml`
+3. Для изменения цвета запустить `change_color.py` (по умолчанию цвет silver)
+4. Запустить `send_to_tv-box.sh` и тем самым отправить изменённый ./Defaults.xml на tv-box
+5. Перезапустить Kodi и посмотреть результат
+
+![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Color/blob/main/screenshots/screenshot1.png)
+![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Color/blob/main/screenshots/screenshot2.png)
+
+
+Стандартные и дополнительные цвета в терминале (ANSI + Расширенные)
+---
+black - чёрный
+red - красный
+green - зелёный
+yellow - жёлтый
+blue - синий
+magenta - маджента (пурпурный)
+cyan - голубой (циан)
+white - белый
+bright black или grey - тёмно-серый (или просто серый)
+bright red - ярко-красный
+bright green - ярко-зелёный
+bright yellow - ярко-жёлтый
+bright blue - ярко-синий
+bright magenta - ярко-маджента
+bright cyan - ярко-голубой
+bright white - ярко-белый
+
+Дополнительные цвета, которые поддерживаются в некоторых библиотеках и контекстах
+---
+silver - серебристый
+gold - золотой
+pink - розовый
+brown - коричневый
+lightgray - светло-серый
+darkgray - тёмно-серый
+
