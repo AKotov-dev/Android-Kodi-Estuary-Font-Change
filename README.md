@@ -40,7 +40,7 @@
 `Defaults_orig.xml` - оригинальный файл настройки цвета (взят из Kodi-21.2)  
 `Defaults.xml` - измененный файл настройки цвета для замены на tv-box  
 `Restore_Defaults.xml.sh` - скрипт, переcoздаёт ./Defaults.xml из оригинального ./Defaults_orig.xml  
-`change_color.py` - скрипт, изменение цвета (silver) текста (фильмы, серии, заголовки)  
+`change_color.py` - скрипт, изменение цвета текста на `silver` (фильмы, серии, заголовки)  
 `send_to_tv-box.sh` - скрипт, отправляет изменённый ./Font.xml на tv-box  
 
 Как изменить цвет текста
