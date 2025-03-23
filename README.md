@@ -47,6 +47,6 @@
 --
 1. Подключиться к tv-box, например через [ADBManager](https://github.com/AKotov-dev/adbmanager)
 2. Запустить `Restore_Defaults.xml.sh` чтобы начать с дефолтного `Defaults.xml`
-3. Для изменения цвета запустить `change_color.py` (по умолчанию цвет silver)
+3. Для изменения цвета запустить `change_color.py` (по умолчанию цвет `silver`)
 4. Запустить `send_to_tv-box.sh` и тем самым отправить изменённый ./Defaults.xml на tv-box
 5. Перезапустить Kodi и посмотреть результат
