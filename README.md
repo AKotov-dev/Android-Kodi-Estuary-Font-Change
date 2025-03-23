@@ -32,7 +32,7 @@
 ![](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/blob/main/screenshots/screenshot2.png)
 
 Как изменить цвет шрифта
----
+--
 В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору белый текст был слишком ярким, а регулировка цвета шрифта в самом Kodi, разумеется, отсутствует. Чтобы не надевать сварочную маску для просмотра любимых фильмов через Kodi было сделано следующее...
 
 Файлы в архиве skin.estuary_font_color.tar.gz
