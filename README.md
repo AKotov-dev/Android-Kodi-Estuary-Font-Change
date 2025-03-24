@@ -1,6 +1,6 @@
 # Android-Kodi-Estuary-Font-Change
 
-Это скрипты для изменения [размера](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/raw/refs/heads/main/skin.estuary_font_color.tar.gz) и [цвета](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/raw/refs/heads/main/skin.estuary_font_color.tar.gz) шрифтов Kodi в стандартной обложке `skin.estuary` для Android-TV-Box. В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору шрифты были слишком мелкие, а регулировка размера шрифтов в самом Kodi, разумеется, отсутствует. В результате пришлось делать это...
+Это скрипты для изменения [размера](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/raw/refs/heads/main/skin.estuary_font_size.tar.gz) и [цвета](https://github.com/AKotov-dev/Android-Kodi-Estuary-Font-Change/raw/refs/heads/main/skin.estuary_font_color.tar.gz) шрифтов Kodi в стандартной обложке `skin.estuary` для Android-TV-Box. В моём случае при подключении приставки [x96q-pro1](https://slimboxtv.ru/x96q/) к телевизору шрифты были слишком мелкие, а регулировка размера шрифтов в самом Kodi, разумеется, отсутствует. В результате пришлось делать это...
 
 Для работы требуется рутированный tv-box и хотя бы 1 раз запущенный Kodi, поскольку нужные для редактирования файлы появляются именно после первого запуска Kodi.
 
